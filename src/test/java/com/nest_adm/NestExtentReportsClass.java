@@ -1,4 +1,4 @@
-package test;
+package com.nest_adm;
 
 import java.io.File;
 import java.io.IOException;
