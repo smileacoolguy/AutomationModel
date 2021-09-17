@@ -1,79 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[ExtentReports Set up completed]]>
-    </line>
   </reporter-output>
-  <suite started-at="2021-09-17T21:42:37 IST" name="Suite" finished-at="2021-09-17T21:43:02 IST" duration-ms="24993">
+  <suite started-at="2021-09-18T00:53:31 IST" name="Default suite" finished-at="2021-09-18T00:53:41 IST" duration-ms="9791">
     <groups>
     </groups>
-    <test started-at="2021-09-17T21:42:37 IST" name="Default test" finished-at="2021-09-17T21:43:02 IST" duration-ms="24993">
-      <class name="test.FirstAutoSel">
-        <test-method signature="FirstAutoSel()[pri:0, instance:test.FirstAutoSel@2794eab6]" started-at="2021-09-17T21:42:37 IST" name="FirstAutoSel" finished-at="2021-09-17T21:42:42 IST" duration-ms="5023" status="PASS">
+    <test started-at="2021-09-18T00:53:31 IST" name="Default test" finished-at="2021-09-18T00:53:41 IST" duration-ms="9791">
+      <class name="com.nest_adm.FirstAutoSel">
+        <test-method signature="FirstAutoSel()[pri:0, instance:com.nest_adm.FirstAutoSel@25641d39]" started-at="2021-09-18T00:53:31 IST" name="FirstAutoSel" finished-at="2021-09-18T00:53:37 IST" duration-ms="5791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstAutoSel -->
-        <test-method signature="FirstAutoSel1()[pri:0, instance:test.FirstAutoSel@2794eab6]" started-at="2021-09-17T21:42:42 IST" name="FirstAutoSel1" description="parallel" finished-at="2021-09-17T21:42:47 IST" duration-ms="4814" status="PASS">
+        <test-method signature="FirstAutoSel1()[pri:0, instance:com.nest_adm.FirstAutoSel@25641d39]" started-at="2021-09-18T00:53:37 IST" name="FirstAutoSel1" description="parallel" finished-at="2021-09-18T00:53:41 IST" duration-ms="3909" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstAutoSel1 -->
-        <test-method is-config="true" signature="closequit()[pri:0, instance:test.FirstAutoSel@2794eab6]" started-at="2021-09-17T21:42:57 IST" name="closequit" finished-at="2021-09-17T21:43:02 IST" duration-ms="4157" status="PASS">
+        <test-method is-config="true" signature="closequit()[pri:0, instance:com.nest_adm.FirstAutoSel@25641d39]" started-at="2021-09-18T00:53:41 IST" name="closequit" finished-at="2021-09-18T00:53:41 IST" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closequit -->
-      </class> <!-- test.FirstAutoSel -->
-      <class name="test.NestExtentReportsClass">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:test.NestExtentReportsClass@63376bed]" started-at="2021-09-17T21:42:37 IST" name="startReport" finished-at="2021-09-17T21:42:37 IST" duration-ms="203" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[ExtentReports Set up completed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.NestExtentReportsClass@63376bed]" started-at="2021-09-17T21:42:47 IST" name="setup" finished-at="2021-09-17T21:42:51 IST" duration-ms="3587" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyNestLogin()[pri:0, instance:test.NestExtentReportsClass@63376bed]" started-at="2021-09-17T21:42:51 IST" name="verifyNestLogin" finished-at="2021-09-17T21:42:54 IST" duration-ms="3003" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNestLogin -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.NestExtentReportsClass@63376bed]" started-at="2021-09-17T21:42:54 IST" name="getResult" finished-at="2021-09-17T21:42:54 IST" duration-ms="126" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyNestLogin status=SUCCESS method=NestExtentReportsClass.verifyNestLogin()[pri:0, instance:test.NestExtentReportsClass@63376bed] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.NestExtentReportsClass@63376bed]" started-at="2021-09-17T21:42:54 IST" name="setup" finished-at="2021-09-17T21:42:57 IST" duration-ms="3651" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyTitle()[pri:0, instance:test.NestExtentReportsClass@63376bed]" started-at="2021-09-17T21:42:57 IST" name="verifyTitle" finished-at="2021-09-17T21:42:57 IST" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTitle -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.NestExtentReportsClass@63376bed]" started-at="2021-09-17T21:42:57 IST" name="getResult" finished-at="2021-09-17T21:42:57 IST" duration-ms="116" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTitle status=SUCCESS method=NestExtentReportsClass.verifyTitle()[pri:0, instance:test.NestExtentReportsClass@63376bed] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:test.NestExtentReportsClass@63376bed]" started-at="2021-09-17T21:43:02 IST" name="endReport" finished-at="2021-09-17T21:43:02 IST" duration-ms="275" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- test.NestExtentReportsClass -->
+      </class> <!-- com.nest_adm.FirstAutoSel -->
     </test> <!-- Default test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- Default suite -->
 </testng-results>
