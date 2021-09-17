@@ -18,7 +18,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class FirstAutoSel {
 	public WebDriver driver;
 	
-	@Test(priority=0,invocationCount = 1)
+	@Test(priority=0)
 	public void FirstAutoSel() {
 		// TODO Auto-generated constructor stub
 		//A a=new A();
@@ -36,15 +36,16 @@ public class FirstAutoSel {
 				// Navigate to the demoqa website
 				driver.get("https://www.demoqa.com");
 				System.out.println(driver.getTitle());
-				
-				Assert.assertEquals("ToolsQA", driver.getTitle());
-				
-				driver.quit();
+				try {
+					Assert.assertEquals("ToolsQA", driver.getTitle());
+				} finally {
+					System.out.println("Test Failed : Closing Driver");
+				}
 
 
 	}
 	
-	@Test(priority=0,description = "parallel",testName = "pl")
+	@Test(priority=1,description = "parallel",testName = "pl")
 	public void FirstAutoSel1() {
 		// TODO Auto-generated constructor stub
 		//A a=new A();
@@ -71,11 +72,12 @@ public class FirstAutoSel {
 				
 	}		
 
-@AfterTest(alwaysRun = true)
+@AfterMethod(alwaysRun = true)
 
-public void closequit() {
-	driver.close();
+	public void close() {
+		driver.close();
+		}	
+	
 
-	}
 
 }
