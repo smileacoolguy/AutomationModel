@@ -1,6 +1,6 @@
 /*Sample change test
 */
-package com.nest_adm;
+package com.nestadmin;
 
 //import com.test.A;
 

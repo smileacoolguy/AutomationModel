@@ -4,8 +4,8 @@
 <suite name="Suite"  >
     <test  name="Default test" verbose="2">
     <classes>
-      <class name="test.FirstAutoSel"/>
-      <class name="test.NestExtentReportsClass"/>
+      <class name="com.nestadmin.FirstAutoSel"/>
+      <class name="com.nestadmin.NestExtentReportsClass"/>
     </classes>
   </test> <!-- Default test -->
 </suite> <!-- Suite -->

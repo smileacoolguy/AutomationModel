@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-18T00:53:31 IST" name="Default suite" finished-at="2021-09-18T00:53:41 IST" duration-ms="9791">
+  <suite started-at="2021-09-18T01:04:21 IST" name="Default suite" finished-at="2021-09-18T01:04:30 IST" duration-ms="8991">
     <groups>
     </groups>
-    <test started-at="2021-09-18T00:53:31 IST" name="Default test" finished-at="2021-09-18T00:53:41 IST" duration-ms="9791">
-      <class name="com.nest_adm.FirstAutoSel">
-        <test-method signature="FirstAutoSel()[pri:0, instance:com.nest_adm.FirstAutoSel@25641d39]" started-at="2021-09-18T00:53:31 IST" name="FirstAutoSel" finished-at="2021-09-18T00:53:37 IST" duration-ms="5791" status="PASS">
+    <test started-at="2021-09-18T01:04:21 IST" name="Default test" finished-at="2021-09-18T01:04:30 IST" duration-ms="8991">
+      <class name="com.nestadmin.FirstAutoSel">
+        <test-method signature="FirstAutoSel()[pri:0, instance:com.nestadmin.FirstAutoSel@25641d39]" started-at="2021-09-18T01:04:21 IST" name="FirstAutoSel" finished-at="2021-09-18T01:04:26 IST" duration-ms="4946" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstAutoSel -->
-        <test-method signature="FirstAutoSel1()[pri:0, instance:com.nest_adm.FirstAutoSel@25641d39]" started-at="2021-09-18T00:53:37 IST" name="FirstAutoSel1" description="parallel" finished-at="2021-09-18T00:53:41 IST" duration-ms="3909" status="PASS">
+        <test-method signature="FirstAutoSel1()[pri:0, instance:com.nestadmin.FirstAutoSel@25641d39]" started-at="2021-09-18T01:04:26 IST" name="FirstAutoSel1" description="parallel" finished-at="2021-09-18T01:04:30 IST" duration-ms="3966" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstAutoSel1 -->
-        <test-method is-config="true" signature="closequit()[pri:0, instance:com.nest_adm.FirstAutoSel@25641d39]" started-at="2021-09-18T00:53:41 IST" name="closequit" finished-at="2021-09-18T00:53:41 IST" duration-ms="59" status="PASS">
+        <test-method is-config="true" signature="closequit()[pri:0, instance:com.nestadmin.FirstAutoSel@25641d39]" started-at="2021-09-18T01:04:30 IST" name="closequit" finished-at="2021-09-18T01:04:30 IST" duration-ms="50" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closequit -->
-      </class> <!-- com.nest_adm.FirstAutoSel -->
+      </class> <!-- com.nestadmin.FirstAutoSel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
