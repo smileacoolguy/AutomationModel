@@ -38,7 +38,7 @@
         <version>3.0.0-M5</version>
         <configuration>
         <suiteXmlFiles>
-        <suiteXmlFile> testng.xml</suiteXmlFile>
+        <suiteXmlFile>testng.xml</suiteXmlFile>
         </suiteXmlFiles>
           <parallel>methods</parallel>
           <threadCount>10</threadCount>
