@@ -13,4 +13,5 @@
       <class name="com.nestadmin.NestExtentReportsClass"/>
     </classes>
   </test> <!-- Default test --> 
+    
 </suite> <!-- Suite -->
