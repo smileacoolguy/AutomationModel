@@ -20,6 +20,8 @@ public class FirstAutoSel {
 	
 	@Test(priority=0)
 	public void FirstAutoSel() {
+		String s="";
+		
 		// TODO Auto-generated constructor stub
 		//A a=new A();
 		//a.sampleString("ajaz");    //imported method run 

@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="10" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="10" parallel="methods" name="Default test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.NestExtentReportsClass">
+      <class name="com.nestadmin.test.HomePageTest">
         <methods>
           <include name="startReport"/>
-          <include name="setup"/>
-          <include name="verifyNestLogin"/>
           <include name="endReport"/>
+          <include name="setup"/>
+          <include name="info"/>
+          <include name="verifyTitle"/>
           <include name="getResult"/>
+          <include name="setup1"/>
+          <include name="verifyNestLogin" invocation-numbers="1"/>
         </methods>
-      </class> <!-- test.NestExtentReportsClass -->
-      <class name="test.FirstAutoSel">
-        <methods>
-          <include name="closequit"/>
-          <include name="FirstAutoSel1"/>
-        </methods>
-      </class> <!-- test.FirstAutoSel -->
+      </class> <!-- com.nestadmin.test.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+</suite> <!-- Failed suite [Default suite] -->

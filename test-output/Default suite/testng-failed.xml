@@ -3,12 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.FirstAutoSel">
+      <class name="com.nestadmin.test.HomePageTest">
         <methods>
-          <include name="closequit"/>
-          <include name="FirstAutoSel1"/>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="setup"/>
+          <include name="info"/>
+          <include name="verifyTitle"/>
+          <include name="getResult"/>
+          <include name="setup1"/>
+          <include name="verifyNestLogin" invocation-numbers="1"/>
         </methods>
-      </class> <!-- test.FirstAutoSel -->
+      </class> <!-- com.nestadmin.test.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

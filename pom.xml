@@ -66,8 +66,7 @@
         <configuration>
             <archive>
               <manifest>
-                    <mainClass>com.nestadmin.FirstAutoSel</mainClass>
-                    <mainClass>com.nestadmin.NestExtentReportsClass</mainClass>
+                    <mainClass>com.nestadmin.TestRunner</mainClass>
                 </manifest>
                  
             </archive>
@@ -91,7 +90,13 @@
     <artifactId>maven-war-plugin</artifactId>
     <version>3.3.1</version>
     <configuration>
-     <failOnMissingWebXml> false </failOnMissingWebXml>
+                <archive>
+              <manifest>
+                    <mainClass>com.nestadmin.TestRunner</mainClass>
+                </manifest>
+                 
+            </archive>
+     <failOnMissingWebXml>false</failOnMissingWebXml>
     </configuration>
    </plugin>
     
@@ -188,6 +193,30 @@
   <version>3.3.2</version>
   <type>maven-plugin</type>
 </dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.0.0</version>
+</dependency>
+
+
+		
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.0.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.14.1</version>
+</dependency>
+
 
   </dependencies>
 </project>
