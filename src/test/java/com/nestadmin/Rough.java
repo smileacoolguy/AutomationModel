@@ -23,6 +23,7 @@ System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 BaseTestClass log=new com.nestadmin.BaseTestClass();
 BaseTestClass.log4j2.info("test");
 
+
 //log.info("ajaz");
 logg("a");
 	}
