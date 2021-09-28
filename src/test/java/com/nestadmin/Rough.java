@@ -26,6 +26,16 @@ BaseTestClass.log4j2.info("test");
 
 //log.info("ajaz");
 logg("a");
+
+String s="maju12";
+
+int x=10; 
+int y=5;
+
+x=y;
+y=x;
+System.out.println(x+ " " +y);
+
 	}
 
 }

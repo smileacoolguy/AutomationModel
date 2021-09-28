@@ -14,7 +14,12 @@ public class HomePage {
 	public WebElement LoginButton;
 	//@FindBy(xpath = "//*[@id='signupModalButton']")
 	//WebElement getStarted;
-
+	@FindBy(xpath = "//input[@id='identifierId']")
+	public WebElement Username;
+	
+	@FindBy(xpath = "//input[@id='password']/div[1]/div/div[1]/input")
+	public WebElement Password;
+	
 	public HomePage(WebDriver driver) {
 	this.driver = driver;
 	PageFactory.initElements(driver, this);

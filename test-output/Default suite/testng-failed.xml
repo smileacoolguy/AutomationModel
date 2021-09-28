@@ -9,10 +9,10 @@
           <include name="endReport"/>
           <include name="setup"/>
           <include name="info"/>
-          <include name="verifyTitle"/>
+          <include name="tearDown"/>
           <include name="getResult"/>
           <include name="setup1"/>
-          <include name="verifyNestLogin" invocation-numbers="1"/>
+          <include name="verifyNestLogin" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.nestadmin.test.HomePageTest -->
     </classes>
