@@ -14,30 +14,30 @@
       <![CDATA[]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-09-28T21:26:19 IST" name="Default suite" finished-at="2021-09-28T21:26:36 IST" duration-ms="17896">
+  <suite started-at="2021-09-28T22:13:50 IST" name="Default suite" finished-at="2021-09-28T22:14:06 IST" duration-ms="15801">
     <groups>
     </groups>
-    <test started-at="2021-09-28T21:26:19 IST" name="Default test" finished-at="2021-09-28T21:26:36 IST" duration-ms="17896">
+    <test started-at="2021-09-28T22:13:50 IST" name="Default test" finished-at="2021-09-28T22:14:06 IST" duration-ms="15801">
       <class name="com.nestadmin.test.HomePageTest">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.nestadmin.test.HomePageTest@267f474e]" started-at="2021-09-28T21:26:19 IST" name="startReport" finished-at="2021-09-28T21:26:19 IST" duration-ms="295" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.nestadmin.test.HomePageTest@5bf22f18]" started-at="2021-09-28T22:13:50 IST" name="startReport" finished-at="2021-09-28T22:13:50 IST" duration-ms="175" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ExtentReports Set up completed]]>
             </line>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="info()[pri:0, instance:com.nestadmin.test.HomePageTest@267f474e]" started-at="2021-09-28T21:26:19 IST" name="info" finished-at="2021-09-28T21:26:19 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="info()[pri:0, instance:com.nestadmin.test.HomePageTest@5bf22f18]" started-at="2021-09-28T22:13:50 IST" name="info" finished-at="2021-09-28T22:13:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Base URL Selected :https://apptest.nextory.se/nest_adm/login]]>
             </line>
           </reporter-output>
         </test-method> <!-- info -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.nestadmin.test.HomePageTest@267f474e]" started-at="2021-09-28T21:26:20 IST" name="setup" finished-at="2021-09-28T21:26:25 IST" duration-ms="5789" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.nestadmin.test.HomePageTest@5bf22f18]" started-at="2021-09-28T22:13:51 IST" name="setup" finished-at="2021-09-28T22:13:56 IST" duration-ms="4884" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyNestLogin(java.lang.String,java.lang.String)[pri:1, instance:com.nestadmin.test.HomePageTest@267f474e]" started-at="2021-09-28T21:26:25 IST" name="verifyNestLogin" data-provider="getExcelProperty" finished-at="2021-09-28T21:26:36 IST" duration-ms="10374" status="PASS">
+        <test-method signature="verifyNestLogin(java.lang.String,java.lang.String)[pri:1, instance:com.nestadmin.test.HomePageTest@5bf22f18]" started-at="2021-09-28T22:13:56 IST" name="verifyNestLogin" data-provider="getExcelProperty" finished-at="2021-09-28T22:14:05 IST" duration-ms="9812" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,18 +56,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifyNestLogin -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.nestadmin.test.HomePageTest@267f474e]" started-at="2021-09-28T21:26:36 IST" name="getResult" finished-at="2021-09-28T21:26:36 IST" duration-ms="154" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.nestadmin.test.HomePageTest@5bf22f18]" started-at="2021-09-28T22:14:05 IST" name="getResult" finished-at="2021-09-28T22:14:06 IST" duration-ms="180" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyNestLogin status=SUCCESS method=HomePageTest.verifyNestLogin(java.lang.String,java.lang.String)[pri:1, instance:com.nestadmin.test.HomePageTest@267f474e] output=""]]]>
+                <![CDATA[[TestResult name=verifyNestLogin status=SUCCESS method=HomePageTest.verifyNestLogin(java.lang.String,java.lang.String)[pri:1, instance:com.nestadmin.test.HomePageTest@5bf22f18] output=""]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.nestadmin.test.HomePageTest@267f474e]" started-at="2021-09-28T21:26:36 IST" name="endReport" finished-at="2021-09-28T21:26:36 IST" duration-ms="512" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.nestadmin.test.HomePageTest@5bf22f18]" started-at="2021-09-28T22:14:06 IST" name="endReport" finished-at="2021-09-28T22:14:06 IST" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

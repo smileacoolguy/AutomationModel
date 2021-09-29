@@ -45,6 +45,7 @@ public class BaseTestClass {
 	// public String BaseURL = "http://apptest.nextory.se/nest_adm/login";
 	public String BaseURL = getProperty("url");
 	public String Browser = getProperty("browser");
+	final public  String googleprofile=getProperty("googleprofile");
 	public  Process process=null;
 	ProcessHandle processHandle=null;
 	public long implicitProperty = Long.parseLong(getProperty("implicitWait"));
@@ -115,33 +116,32 @@ public class BaseTestClass {
 		//chromeOptions.addArguments("--profile-directory=Default");
 		//chromeOptions.addArguments("--whitelisted-ips");
 		chromeOptions.addArguments("--start-maximized");
-		chromeOptions.addArguments("--disable-extensions");
-		chromeOptions.addArguments("--disable-plugins-discovery");
-		chromeOptions.addArguments("--disable-web-security");
-		//String chromeloc="--user-data-dir="+System.getProperty("user.dir") + "/src/test/resources/locationGoogleChrome/";
-		//chromeOptions.addArguments(chromeloc);
+
+		String chromeloc="--user-data-dir="+System.getProperty("user.dir") + "/src/test/resources/locationGoogleChrome/";
+		chromeOptions.addArguments(chromeloc);
+		//chromeOptions.addArguments("user-data-dir=C:\\localhost");
 		chromeOptions.addArguments("chrome.switches", "--disable-extensions");
-		chromeOptions.addArguments("user-data-dir=C:\\localhost");
 		chromeOptions.addArguments("--allow-running-insecure-content");
 		//chromeOptions.addArguments("--headless");
 		chromeOptions.addArguments("--no-sandbox");
 		chromeOptions.addArguments("--disable-dev-shm-usage");
-		
-		
+		chromeOptions.addArguments("--disable-extensions");
+		chromeOptions.addArguments("--disable-plugins-discovery");
+		chromeOptions.addArguments("--disable-web-security");
 		chromeOptions.addArguments("--disable-blink-features");
 		//chromeOptions.addArguments("--incognito","--disable-blink-features=AutomationControlled");
 		chromeOptions.addArguments("--disable-infobars");
-		chromeOptions.addArguments("--remote-debugging-port=9222");
-
-		chromeOptions.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
-		//chromeOptions.setExperimentalOption("useAutomationExtension", true);
-		//chromeOptions.setExperimentalOption("excludeSwitches", Arrays.asList("enable-automation"));
-		chromeOptions.setExperimentalOption("debuggerAddress","localhost:9222");
+	//	
 		
 		//Google profile setup
-		//"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\localhost"
+		//"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="E:\AutomationModel\src\test\resources\locationGoogleChrome"
 				
-		// need to create google profile for google login automation,as browser not safe exception triggers
+		// need to create google profile through port connect  for google login automation,as browser not safe exception triggers
+		System.out.println("googleprofile "+ googleprofile);
+		if(googleprofile.equals("true")) {
+		chromeOptions.addArguments("--remote-debugging-port=9222");
+		chromeOptions.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
+		chromeOptions.setExperimentalOption("debuggerAddress","localhost:9222");
 		ProcessBuilder pb = new ProcessBuilder("cmd", "/c", "GoogleProfile.bat");
 		File dir = new File(System.getProperty("user.dir")+"/src/test/resources");
 		pb.directory(dir);
@@ -156,7 +156,8 @@ public class BaseTestClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}	      
-				
+		}
+		
 		//chromeOptions.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");    // we can directly open chrome binary file
 		// WebDriverManager.chromedriver().driverVersion("93.0.4577.63").setup();
 		
@@ -240,6 +241,7 @@ public class BaseTestClass {
 					MarkupHelper.createLabel(result.getName() + " Test Case PASSED", ExtentColor.GREEN));
 		}
 		System.out.println("Quitting Browser session");
+		if(googleprofile.equals("true")) {
 		//processHandle.destroy();
 		//System.out.println(processHandle.toString()+" "+processHandle.info());
 		// closing chrome session by pid
@@ -281,7 +283,8 @@ public class BaseTestClass {
 		System.out.println(process.destroyForcibly());
 		process.supportsNormalTermination();
 		
-	}
+	    }
+		}
 		driver.quit();
 
 		

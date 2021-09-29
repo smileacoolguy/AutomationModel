@@ -9,7 +9,6 @@
           <include name="endReport"/>
           <include name="setup"/>
           <include name="info"/>
-          <include name="tearDown"/>
           <include name="getResult"/>
           <include name="setup1"/>
           <include name="verifyNestLogin" invocation-numbers="0"/>

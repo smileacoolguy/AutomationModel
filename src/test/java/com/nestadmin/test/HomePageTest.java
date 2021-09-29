@@ -86,7 +86,6 @@ public class HomePageTest extends BaseTestClass{
 			}
 			
 		}
-		process.destroy();
 		
 	}
 	
